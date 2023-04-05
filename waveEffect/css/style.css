@@ -1,0 +1,155 @@
+* { margin: 0; padding: 0; }
+
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #252525;
+}
+
+#circle
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 5;
+}
+
+#firstWave
+{
+    position: absolute;
+    top: 60%;
+    left: -1450px;
+    width: 2000px;
+    height: 800px;
+    animation: waveHorizontalMoving 7s ease-in-out infinite, waveVerticalMoving 22s ease-in-out forwards;
+    z-index: 4;
+}
+
+#secondWave
+{
+    position: absolute;
+    top: 60%;
+    left: -1450px;
+    width: 2000px;
+    height: 800px;
+    animation: waveHorizontalMoving 7s ease-in-out infinite 1s, waveVerticalMoving 21.5s ease-in-out forwards;
+    z-index: 3;
+}
+
+#thirdWave
+{
+    position: absolute;
+    top: 60%;
+    left: -1450px;
+    width: 2000px;
+    height: 800px;
+    animation: waveHorizontalMoving 7s ease-in-out infinite 2s, waveVerticalMoving 21s ease-in-out forwards;
+    z-index: 2;
+}
+
+
+@keyframes waveHorizontalMoving {
+    50% { left: -150px; }
+}
+
+@keyframes waveVerticalMoving {
+    0% { top: 60%; }
+    3% { top: 58%; }
+    6% { top: 56%; }
+    9% { top: 54%; }
+    12% { top: 52%; }
+    15% { top: 50%; }
+    18% { top: 48%; }
+    21% { top: 46%; }
+    24% { top: 44%; }
+    27% { top: 42%; }
+    30% { top: 40%; }
+    33% { top: 38%; }
+    36% { top: 36%; }
+    39% { top: 34%; }
+    42% { top: 32%; }
+    45% { top: 30%; }
+    48% { top: 28%; }
+    51% { top: 26%; }
+    54% { top: 24%; }
+    57% { top: 22%; }
+    60% { top: 20%; }
+    63% { top: 18%; }
+    66% { top: 16%; }
+    69% { top: 14%; }
+    72% { top: 12%; }
+    75% { top: 10%; }
+    78% { top: 8%; }
+    81% { top: 6%; }
+    84% { top: 4%; }
+    87% { top: 2%; }
+    90% { top: 0%; }
+    93% { top: -2%; }
+    96% { top: -4%; }
+    99% { top: -6%; }
+    100% { top: -8%;}
+}
+
+/*
+
+@keyframes waveVerticalMoving {
+    0% {top: 400px; }
+    2% {top: 390px; }
+    4% {top: 380px; }
+    6% {top: 370px; }
+    8% {top: 360px; }
+    10% {top: 350px; }
+    12% {top: 360px; }
+    14% {top: 370px; }
+    16% {top: 380px; }
+    18% {top: 370px; }
+    20% {top: 360px; }
+    22% {top: 350px; }
+    24% {top: 340px; }
+    26% {top: 330px; }
+    28% {top: 320px; }
+    30% {top: 310px; }
+    32% {top: 300px; }
+    34% {top: 290px; }
+    36% {top: 300px; }
+    38% {top: 310px; }
+    40% {top: 320px; }
+    42% {top: 310px; }
+    44% {top: 300px; }
+    46% {top: 290px; }
+    48% {top: 280px; }
+    50% {top: 270px; }
+    52% {top: 260px; }
+    54% {top: 250px; }
+    56% {top: 260px; }
+    58% {top: 270px; }
+    60% {top: 280px; }
+    62% {top: 270px; }
+    64% {top: 260px; }
+    66% {top: 250px; }
+    68% {top: 240px; }
+    70% {top: 230px; }
+    72% {top: 220px; }
+    74% {top: 210px; }
+    76% {top: 200px; }
+    78% {top: 190px; }
+    80% {top: 180px; }
+    82% {top: 190px; }
+    84% {top: 200px; }
+    86% {top: 210px; }
+    88% {top: 200px; }
+    90% {top: 190px; }
+    92% {top: 180px; }
+    94% {top: 170px; }
+    96% {top: 160px; }
+    98% {top: 150px; }
+    100% {top: 140px; }
+}
+*/
